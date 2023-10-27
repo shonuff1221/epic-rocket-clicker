@@ -96,7 +96,7 @@ import TrollMessage from "../ModalComponents/TrollMessage";
 
         let checkPossiblity = this.state.click - this.state.casino_stake;
         
-        if(this.state.casino_multiplier != 0 && checkPossiblity > 0)
+        if(this.state.casino_multiplier !== 0 && checkPossiblity > 0)
         {
            this.ChangePoints(this.state.casino_stake);
            let randomnmbr = this.getRandomInt(0, 100);
@@ -119,7 +119,7 @@ import TrollMessage from "../ModalComponents/TrollMessage";
     {
         let winval = x * y;
         
-        if(x == 1.25)
+        if(x === 1.25)
         {
             if(z <= 33)
             {
@@ -134,7 +134,7 @@ import TrollMessage from "../ModalComponents/TrollMessage";
             }
         }
 
-        if(x == 1.50)
+        if(x === 1.50)
         {
             if(z <= 20)
             {
@@ -149,7 +149,7 @@ import TrollMessage from "../ModalComponents/TrollMessage";
             }
         }
 
-        if(x == 2)
+        if(x === 2)
         {
             if(z <= 10)
             {
@@ -247,7 +247,7 @@ import TrollMessage from "../ModalComponents/TrollMessage";
             checkpwrs = false;
         }
 
-        if(TankValue == "MAX")
+        if(TankValue === "MAX")
         {
             if(FullCost <= this.state.click)
             {
@@ -463,7 +463,7 @@ import TrollMessage from "../ModalComponents/TrollMessage";
 
         return( 
         <> 
-        <div className="mobileInfo"> <h2>This game works only on desktop browser</h2><center> <img src="https://c.tenor.com/jM88jRsqnL8AAAAC/peppo-pepe.gif" width='400'/></center></div>
+        <div className="mobileInfo"> <h2>This game works only on desktop browser</h2><center> <img src="https://c.tenor.com/jM88jRsqnL8AAAAC/peppo-pepe.gif" width='400' alt="info"/></center></div>
 
         <div className="fullscreen">
             
